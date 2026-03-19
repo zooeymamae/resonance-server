@@ -42,4 +42,4 @@ app.get('/search/movies', async (req, res) => {
   res.json(data.results);
 });
 
-app.listen(3000, () => console.log('Resonance server running on port 3000'));
+app.listen(process.env.PORT || 3000, () => console.log('✓ Resonance server running'));
